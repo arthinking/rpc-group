@@ -15,7 +15,6 @@ import org.slf4j.LoggerFactory;
 /**
  * RPC服务端:请求处理过程
  *
- * @author pzx (zhanxuan_peng@kingdee.com)
  * @version 1.0
  * @since 20/8/2016
  */

@@ -17,7 +17,6 @@ import java.util.concurrent.ThreadLocalRandom;
 /**
  * 服务发现:连接ZK,添加watch事件
  *
- * @author pzx (zhanxuan_peng@kingdee.com)
  * @version 1.0
  * @since 20/8/2016
  */

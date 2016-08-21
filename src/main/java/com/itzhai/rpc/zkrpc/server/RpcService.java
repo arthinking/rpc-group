@@ -10,7 +10,6 @@ import java.lang.annotation.Target;
 /**
  * RPC接口注解
  *
- * @author pzx (zhanxuan_peng@kingdee.com)
  * @version 1.0
  * @since 20/8/2016
  */
