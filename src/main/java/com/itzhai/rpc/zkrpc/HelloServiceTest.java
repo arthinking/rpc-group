@@ -1,5 +1,7 @@
 package com.itzhai.rpc.zkrpc;
 
+import com.itzhai.rpc.zkrpc.client.RpcProxy;
+import com.itzhai.rpc.zkrpc.demo.api.HelloService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

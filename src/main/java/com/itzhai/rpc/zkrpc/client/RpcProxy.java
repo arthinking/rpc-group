@@ -1,5 +1,7 @@
-package com.itzhai.rpc.zkrpc;
+package com.itzhai.rpc.zkrpc.client;
 
+import com.itzhai.rpc.zkrpc.common.RpcRequest;
+import com.itzhai.rpc.zkrpc.common.RpcResponse;
 import net.sf.cglib.proxy.InvocationHandler;
 import net.sf.cglib.proxy.Proxy;
 

@@ -1,4 +1,4 @@
-package com.itzhai.rpc.zkrpc;
+package com.itzhai.rpc.zkrpc.common;
 
 import com.dyuproject.protostuff.LinkedBuffer;
 import com.dyuproject.protostuff.Pipe;

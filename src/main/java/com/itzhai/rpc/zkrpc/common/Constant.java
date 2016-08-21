@@ -1,4 +1,4 @@
-package com.itzhai.rpc.zkrpc;
+package com.itzhai.rpc.zkrpc.common;
 
 /**
  * ZK相关常量

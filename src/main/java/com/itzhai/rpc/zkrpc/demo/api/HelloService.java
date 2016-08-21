@@ -1,4 +1,4 @@
-package com.itzhai.rpc.zkrpc;
+package com.itzhai.rpc.zkrpc.demo.api;
 
 /**
  * 定义服务接口

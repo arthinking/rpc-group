@@ -1,5 +1,6 @@
-package com.itzhai.rpc.zkrpc;
+package com.itzhai.rpc.zkrpc.client;
 
+import com.itzhai.rpc.zkrpc.common.Constant;
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;

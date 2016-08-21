@@ -1,4 +1,7 @@
-package com.itzhai.rpc.zkrpc;
+package com.itzhai.rpc.zkrpc.demo;
+
+import com.itzhai.rpc.zkrpc.demo.api.HelloService;
+import com.itzhai.rpc.zkrpc.server.RpcService;
 
 /**
  * 实现服务接口
