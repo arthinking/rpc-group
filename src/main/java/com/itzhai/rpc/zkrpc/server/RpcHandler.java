@@ -42,6 +42,13 @@ public class RpcHandler extends SimpleChannelInboundHandler<RpcRequest> {
 		ctx.writeAndFlush(response).addListener(ChannelFutureListener.CLOSE);
 	}
 
+	/**
+	 * 根据传入的Service和方法名称参数,通过动态代理调用实际的方法,返回处理结果
+	 *
+	 * @param request
+	 * @return
+	 * @throws Throwable
+	 */
 	private Object handle(RpcRequest request) throws Throwable {
 		String className = request.getClassName();
 		Object serviceBean = handlerMap.get(className);

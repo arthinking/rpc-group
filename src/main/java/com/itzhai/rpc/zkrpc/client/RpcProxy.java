@@ -28,6 +28,13 @@ public class RpcProxy {
 		this.serviceDiscovery = serviceDiscovery;
 	}
 
+	/**
+	 * 通过动态代理,把请求转给真正的RPC客户端进行处理
+	 *
+	 * @param interfaceClass
+	 * @param <T>
+	 * @return
+	 */
 	@SuppressWarnings("unchecked")
 	public <T> T create(Class<?> interfaceClass) {
 		return (T) Proxy.newProxyInstance(

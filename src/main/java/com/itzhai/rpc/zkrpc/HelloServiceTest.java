@@ -24,6 +24,7 @@ public class HelloServiceTest {
 
 	@Test
 	public void helloTest() {
+		// 通过动态代理调用服务方法
 		HelloService helloService = rpcProxy.create(HelloService.class);
 		String result = helloService.hello("World");
 		Assert.assertEquals("Hello! World", result);

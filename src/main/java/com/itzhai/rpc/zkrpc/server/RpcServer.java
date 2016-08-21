@@ -47,6 +47,12 @@ public class RpcServer implements ApplicationContextAware, InitializingBean {
 		this.serviceRegistry = serviceRegistry;
 	}
 
+	/**
+	 * 解析bean的RpcService注解,获取所有的服务,存放到handlerMap中
+	 *
+	 * @param ctx
+	 * @throws BeansException
+	 */
 	public void setApplicationContext(ApplicationContext ctx) throws BeansException {
 		Map<String, Object> serviceBeanMap = ctx.getBeansWithAnnotation(RpcService.class); // 获取所有带有 RpcService 注解的 Spring Bean
 		if (MapUtils.isNotEmpty(serviceBeanMap)) {
@@ -57,6 +63,11 @@ public class RpcServer implements ApplicationContextAware, InitializingBean {
 		}
 	}
 
+	/**
+	 * 启动服务器,处理客户端连接,通过RpcHandler处理RPC请求
+	 *
+	 * @throws Exception
+	 */
 	public void afterPropertiesSet() throws Exception {
 		EventLoopGroup bossGroup = new NioEventLoopGroup();
 		EventLoopGroup workerGroup = new NioEventLoopGroup();

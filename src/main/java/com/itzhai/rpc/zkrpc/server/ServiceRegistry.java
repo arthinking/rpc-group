@@ -26,6 +26,11 @@ public class ServiceRegistry {
 		this.registryAddress = registryAddress;
 	}
 
+	/**
+	 * 注册服务地址
+	 *
+	 * @param data 服务地址
+	 */
 	public void register(String data) {
 		if (data != null) {
 			ZooKeeper zk = connectServer();
