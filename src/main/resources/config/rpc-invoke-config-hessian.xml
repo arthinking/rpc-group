@@ -7,7 +7,7 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
   <context:component-scan base-package="com.itzhai.rpc.nettyrpc.core"/>
-  <context:property-placeholder location="classpath:com.itzhai.rpc.nettyrpc/config/rpc-server-hessian.properties"/>
+  <context:property-placeholder location="classpath:config/rpc-server-hessian.properties"/>
   <bean id="rpcbean" class="com.itzhai.rpc.nettyrpc.model.MessageKeyVal">
     <property name="messageKeyVal">
       <map>

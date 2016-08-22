@@ -15,7 +15,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class RpcServerKryoProtocolStarter {
 
     public static void main(String[] args) {
-        new ClassPathXmlApplicationContext("com.itzhai.rpc.nettyrpc/config/rpc-invoke-config-kryo.xml");
+        new ClassPathXmlApplicationContext("config/rpc-invoke-config-kryo.xml");
     }
 }
 
